@@ -1,18 +1,44 @@
 {
-  "name": "vue-press",
-  "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT",
+  "name": "magege-blog",
+  "private": true,
   "scripts": {
-    "dev": "vuepress dev docs",
-    "build": "vuepress build docs"
+    "clean": "rimraf blog/.vuepress/.temp blog/.vuepress/.cache blog/.vuepress/dist",
+    "dev": "vuepress-cli dev blog --clean-cache",
+    "build": "pnpm clean && vuepress-cli build blog --clean-cache",
+    "serve": "serve blog/.vuepress/dist"
   },
   "devDependencies": {
-    "eslint": "^8.8.0",
-    "vuepress": "^1.9.7",
-    "vuepress-plugin-sakura": "^1.1.0"
+    "@vuepress/bundler-vite": "2.0.0-beta.49",
+    "@vuepress/cli": "2.0.0-beta.49",
+    "@vuepress/client": "2.0.0-beta.49",
+    "oh-vue-icons": "^1.0.0-rc3",
+    "sass-loader": "^13.0.2",
+    "serve": "^14.0.1",
+    "rimraf": "^3.0.2",
+    "vue": "^3.2.36",
+    "vuepress": "2.0.0-beta.49",
+    "vuepress-theme-gungnir": "2.0.0-alpha.26",
+    "@typescript-eslint/eslint-plugin": "^5.44.0",
+    "@typescript-eslint/parser": "^5.44.0",
+    "eslint": "^8.0.1",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-n": "^15.0.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-vue": "^9.8.0",
+    "prettier": "^2.8.0"
   },
-  "dependencies": {
-    "vuepress-theme-reco": "^1.6.10"
+  "engines": {
+    "node": ">=14",
+    "pnpm": ">=7"
+  },
+  "pnpm": {
+    "peerDependencyRules": {
+      "ignoreMissing": [
+        "webpack"
+      ]
+    }
   }
 }
