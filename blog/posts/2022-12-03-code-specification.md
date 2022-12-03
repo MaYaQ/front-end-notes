@@ -57,7 +57,7 @@ trim_trailing_whitespace = false
 
 :::warning 注意
 VSCode 使用 EditorConfig 需要去插件市场下载插件 `EditorConfig for VS Code`。
-![heme-gungnir](/img/in-post/2022-12-04/651.png)
+![heme-gungnir](/img/in-post/2022-12-03/651.png)
 :::
 
 ## 集成 Prettier 配置
@@ -99,7 +99,7 @@ npx prettier --write .
 
 :::warning 注意
 VSCode 编辑器使用 Prettier 配置需要下载插件 Prettier - Code formatter
-![heme-gungnir](/img/in-post/2022-12-04/650.png)
+![heme-gungnir](/img/in-post/2022-12-03/650.png)
 :::
 
 Prettier 配置好以后，在使用 VSCode 编辑器的格式化功能时，编辑器就会按照 Prettier 配置文件的规则来进行格式化，避免了因为大家编辑器配置不一样而导致格式化后的代码风格不统一的问题。
@@ -123,40 +123,40 @@ ESLint 安装成功后，执行 `npx eslint --init`，然后按照终端操作�
 
 - `How would you like to use ESLint?` （你想如何使用 `ESLint`?）
 
-![theme-gungnir](/img/in-post/2022-12-04/640.png)
+![theme-gungnir](/img/in-post/2022-12-03/640.png)
 
 我们这里选择 `To check syntax, find problems, and enforce code style`（检查语法、发现问题并强制执行代码风格）
 
 - `What type of modules does your project use?`（你的项目使用哪种类型的模块?）
 
-![heme-gungnir](/img/in-post/2022-12-04/641.png)
+![heme-gungnir](/img/in-post/2022-12-03/641.png)
 
 我们这里选择 `JavaScript modules (import/export)`
 
 - `Which framework does your project use? `（你的项目使用哪种框架?）
 
-![heme-gungnir](/img/in-post/2022-12-04/642.png)
+![heme-gungnir](/img/in-post/2022-12-03/642.png)
 
 按项目来定，我们这里选择 Vue.js
 
 - `Does your project use TypeScript?`（你的项目是否使用 `TypeScript`？）
 
-![heme-gungnir](/img/in-post/2022-12-04/643.png)
+![heme-gungnir](/img/in-post/2022-12-03/643.png)
 
 按项目来定，我们这里选择 Yes
 
 - `Where does your code run`?（你的代码在哪里运行?）
-  ![heme-gungnir](/img/in-post/2022-12-04/644.png)
+  ![heme-gungnir](/img/in-post/2022-12-03/644.png)
 
 我们这里选择 `Browser` 和 `Node`（按空格键进行选择，选完按回车键确定）
 
 - `How would you like to define a style for your project`?（你想怎样为你的项目定义风格？）
-  ![heme-gungnir](/img/in-post/2022-12-04/645.png)
+  ![heme-gungnir](/img/in-post/2022-12-03/645.png)
 
 我们这里选择 `Use a popular style guide`（使用一种流行的风格指南）
 
 - `Which style guide do you want to follow?`（你想遵循哪一种风格指南?）
-  ![heme-gungnir](/img/in-post/2022-12-04/646.png)
+  ![heme-gungnir](/img/in-post/2022-12-03/646.png)
 
 我们这里选择 `Airbnb: https://github.com/airbnb/javascript`
 
@@ -167,11 +167,11 @@ ESLint 安装成功后，执行 `npx eslint --init`，然后按照终端操作�
 ##### 这里不建议大家去自由配置 ESLint 规则，相信我，这三份 JavaScript 代码风格指南值得我们反复学习，掌握后，编程能力能上一大台阶。
 
 - `What format do you want your config file to be in?`（你希望你的配置文件是什么格式?）
-  ![heme-gungnir](/img/in-post/2022-12-04/647.png)
+  ![heme-gungnir](/img/in-post/2022-12-03/647.png)
   我们这里选择 `JavaScript`
 
 - `Would you like to install them now with npm?`（你想现在就用 NPM 安装它们吗?）
-  ![heme-gungnir](/img/in-post/2022-12-04/648.png)
+  ![heme-gungnir](/img/in-post/2022-12-03/648.png)
   根据上面的选择，ESLint 会自动去查找缺失的依赖，我们这里选择 Yes，使用 NPM 下载安装这些依赖包。
   :::warning 注意
   如果自动安装依赖失败，那么需要手动安装
@@ -207,11 +207,11 @@ module.exports = {
 
 :::warning 注意
 VSCode 使用 ESLint 配置文件需要去插件市场下载插件 ESLint 。
-![heme-gungnir](/img/in-post/2022-12-04/649.png)
+![heme-gungnir](/img/in-post/2022-12-03/649.png)
 :::
 配置好以后，我们在 `VSCode` 编辑器中开启 `ESLin`，写代码时，`ESLint` 就会按照我们配置的规则来进行实时代码检查，发现问题会给出对应错误提示和修复方案。
 比如：
-![heme-gungnir](/img/in-post/2022-12-04/652.png)
+![heme-gungnir](/img/in-post/2022-12-03/652.png)
 虽然，现在编辑器已经给出错误提示和修复方案，但需要我们一个一个去点击修复，还是挺麻烦的。很简单，我们只需设置编辑器保存文件时自动执行 `eslint --fix `命令进行代码风格修复。
 
 VSCode 在 `settings.json` 设置文件中，增加以下代码：
@@ -283,11 +283,11 @@ npx husky-init && npm install
 
 - 1、安装 husky 到开发依赖
 - 2、在项目根目录下创建 `.husky` 目录
-  ![heme-gungnir](/img/in-post/2022-12-04/653.png)
+  ![heme-gungnir](/img/in-post/2022-12-03/653.png)
 - 3、在 `.husky` 目录创建 `pre-commit hook`，并初始化 `pre-commit` 命令为 `npm test`
-  ![heme-gungnir](/img/in-post/2022-12-04/654.png)
+  ![heme-gungnir](/img/in-post/2022-12-03/654.png)
 - 4、修改 `package.json` 的 `scripts`，增加 `"prepare": "husky install"`
-  ![heme-gungnir](/img/in-post/2022-12-04/655.png)
+  ![heme-gungnir](/img/in-post/2022-12-03/655.png)
 
 到这里，`husky` 配置完毕，现在我们来使用它：
 
@@ -299,7 +299,7 @@ npx husky-init && npm install
 eslint --fix ./src --ext .vue,.js,.ts
 ```
 
-![heme-gungnir](/img/in-post/2022-12-04/656.png)
+![heme-gungnir](/img/in-post/2022-12-03/656.png)
 
 上面这个 `pre-commit hook` 文件的作用是：当我们执行 `git commit -m "xxx"` 时，会先对 src 目录下所有的 `.vue`、`.js`、`.ts` 文件执行 `eslint --fix `命令，如果 `ESLint` 通过，成功 commit，否则终止 commit。
 
@@ -318,7 +318,7 @@ eslint --fix ./src --ext .vue,.js,.ts
   npm i lint-staged -D
   ```
 - 2、在 `package.json` 里增加 `lint-staged` 配置项
-  ![heme-gungnir](/img/in-post/2022-12-04/657.png)
+  ![heme-gungnir](/img/in-post/2022-12-03/657.png)
 
   ```js
   "lint-staged": {
@@ -327,14 +327,14 @@ eslint --fix ./src --ext .vue,.js,.ts
   ```
 
 - 3、修改 `.husky/pre-commit hook` 的触发命令为：`npx lint-staged`
-  ![heme-gungnir](/img/in-post/2022-12-04/658.png)
+  ![heme-gungnir](/img/in-post/2022-12-03/658.png)
   这行命令表示：只对 `git` 暂存区的 `.vue、.js、.ts` 文件执行 `eslint --fix`。
   至此，husky 和 lint-staged 组合配置完成。
 
 现在我们提交代码时就会变成这样：
 
 假如我们修改了 `scr` 目录下的 `test-1.js`、`test-2.ts` 和 `test-3.md` 文件，然后 `git add ./src/`，最后 `git commit -m "test..."`，这时候就会只对 `test-1.js`、`test-2.ts` 这两个文件执行 `eslint --fix`。如果 `ESLint` 通过，成功提交，否则终止提交。从而保证了我们提交到 `Git` 仓库的代码都是规范的。
-![heme-gungnir](/img/in-post/2022-12-04/659.png)
+![heme-gungnir](/img/in-post/2022-12-03/659.png)
 
 这些工具并不是必须的，没有它们你同样可以可以完成功能开发，但是利用好这些工具，我们可以写出更高质量的代码。
 
@@ -348,7 +348,7 @@ eslint --fix ./src --ext .vue,.js,.ts
 
 ##### 先看看 Angular 项目的提交记录：
 
-![heme-gungnir](/img/in-post/2022-12-04/660.png)
+![heme-gungnir](/img/in-post/2022-12-03/660.png)
 如上图，可以看出这些提交信息都是有固定格式的，下面我们来学习 Angular 规范的 commit message 格式。
 
 ##### commit message 格式规范
