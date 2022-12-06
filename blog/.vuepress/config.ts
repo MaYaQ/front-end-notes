@@ -78,20 +78,20 @@ export default defineUserConfig({
       }
     },
     // 主题配置
-    themePlugins: {
-      // only enable git plugin in production mode
-      git: isProd,
-      katex: true,
-      mdPlus: {
-        all: true
-      },
-      ga: 'G-HCQSX53XFG',
-      ba: '75381d210789d3eaf855fa16246860cc',
-      rss: {
-        siteURL: 'https://blog.zxh.io',
-        copyright: 'Renovamen 2018-2022'
-      }
-    },
+    // themePlugins: {
+    //   // only enable git plugin in production mode
+    //   git: isProd,
+    //   katex: true,
+    //   mdPlus: {
+    //     all: true
+    //   },
+    //   ga: 'G-HCQSX53XFG',
+    //   ba: '75381d210789d3eaf855fa16246860cc',
+    //   rss: {
+    //     siteURL: 'https://blog.zxh.io',
+    //     copyright: 'Renovamen 2018-2022'
+    //   }
+    // },
 
     navbar: [
       {
