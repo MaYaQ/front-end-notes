@@ -1,7 +1,7 @@
 ---
 layout: Post
 title: 代码规范
-subtitle: 不以规矩，不能成方圆
+subtitle: 不以规矩，不成方圆
 author: 零向量
 date: 2022-12-03
 useHeaderImage: true
