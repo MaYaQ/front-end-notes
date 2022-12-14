@@ -12,5 +12,5 @@ tags:
 ---
 
 ```js
-import { h, render } from 'vue'
+import { h, render, createVNode } from 'vue'
 ```
