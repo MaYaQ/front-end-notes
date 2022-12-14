@@ -11,7 +11,7 @@ tags:
   - render函数
 ---
 
-### 这三个 api 认识吗？作用分别是什么？？？？？？
+### 这三个 api 认识吗？作用分别是什么？
 
 ```js
 import { h, render, createVNode } from 'vue'
